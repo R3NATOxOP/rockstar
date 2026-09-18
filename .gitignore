@@ -1,1 +1,9 @@
 .DS_Store
+.env
+
+# Docusaurus
+node_modules/
+build/
+.docusaurus/
+.cache-loader/
+
