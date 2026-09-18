@@ -1,0 +1,487 @@
+:root {
+  --onx-bg: #0b0d12;
+  --onx-blue: #30a9ff;
+  --onx-blue-rgb: 48, 169, 255;
+  --onx-white: #ffffff;
+  --onx-black: #010609;
+  --onx-card: #12151a;
+  --onx-card-2: #0e1215;
+  --onx-card-3: #0a0e11;
+  --onx-muted: #bbbbbb;
+
+  --onx-body: 'Montserrat Variable', 'Montserrat', system-ui, sans-serif;
+  --onx-display: 'termina', 'Montserrat Variable', 'Montserrat', sans-serif;
+  --onx-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --onx-radius: 14px;
+  --onx-hairline: rgba(255, 255, 255, 0.08);
+  --onx-hairline-strong: rgba(255, 255, 255, 0.16);
+  --onx-shadow: 0 22px 48px rgba(0, 0, 0, 0.4);
+  --onx-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --onx-ambient: rgba(255, 255, 255, 0.03);
+
+  --ifm-color-primary: var(--onx-blue);
+  --ifm-color-primary-dark: #169dff;
+  --ifm-color-primary-darker: #0796fb;
+  --ifm-color-primary-darkest: #007cd0;
+  --ifm-color-primary-light: #4ab5ff;
+  --ifm-color-primary-lighter: #59bbff;
+  --ifm-color-primary-lightest: #85cdff;
+
+  --ifm-background-color: var(--onx-bg);
+  --ifm-background-surface-color: var(--onx-card);
+  --ifm-font-family-base: var(--onx-body);
+  --ifm-font-family-monospace: var(--onx-mono);
+  --ifm-heading-font-family: var(--onx-display);
+  --ifm-font-color-base: var(--onx-white);
+  --ifm-font-size-base: 15px;
+  --ifm-line-height-base: 1.65;
+
+  --ifm-link-color: var(--onx-blue);
+  --ifm-link-hover-color: var(--onx-blue);
+  --ifm-global-radius: 10px;
+  --ifm-global-shadow-lw: none;
+  --ifm-toc-border-color: var(--onx-hairline);
+  --ifm-hr-border-color: var(--onx-hairline);
+  --ifm-table-border-color: var(--onx-hairline);
+  --ifm-table-head-background: transparent;
+  --ifm-table-stripe-background: rgba(255, 255, 255, 0.02);
+  --ifm-blockquote-color: var(--onx-muted);
+
+  --ifm-navbar-background-color: rgba(11, 13, 18, 0.82);
+  --ifm-navbar-height: 68px;
+  --ifm-navbar-shadow: none;
+  --ifm-navbar-link-color: var(--onx-white);
+  --ifm-navbar-link-hover-color: var(--onx-blue);
+
+  --ifm-menu-color: var(--onx-muted);
+  --ifm-menu-color-active: var(--onx-white);
+  --ifm-menu-color-background-active: rgba(var(--onx-blue-rgb), 0.1);
+  --ifm-menu-color-background-hover: rgba(255, 255, 255, 0.04);
+
+  --ifm-code-background: rgba(var(--onx-blue-rgb), 0.1);
+  --ifm-code-color: #a9d9ff;
+  --ifm-code-font-size: 88%;
+  --ifm-pre-background: var(--onx-card-3);
+
+  --ifm-footer-background-color: var(--onx-card-2);
+  --ifm-footer-color: var(--onx-muted);
+
+  --docusaurus-highlighted-code-line-bg: rgba(var(--onx-blue-rgb), 0.14);
+
+  --onx-icon-github: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E");
+
+  --ifm-navbar-search-input-background-color: rgba(255, 255, 255, 0.04);
+  --ifm-navbar-search-input-color: var(--onx-white);
+  --ifm-navbar-search-input-placeholder-color: var(--onx-muted);
+  --search-local-modal-width: 620px;
+  --search-local-highlight-color: var(--onx-blue);
+  --search-local-hit-background: var(--onx-card);
+  --search-local-hit-color: var(--onx-white);
+  --search-load-loading-icon-color: var(--onx-blue);
+
+  color-scheme: dark;
+  accent-color: var(--onx-blue);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  background: var(--onx-bg);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: -25%;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(38% 38% at 50% 50%, var(--onx-ambient), transparent 70%);
+  will-change: transform;
+  animation: onx-bg-drift 36s ease-in-out infinite alternate;
+}
+
+@keyframes onx-bg-drift {
+  from {
+    transform: translate3d(-6%, -4%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(6%, 5%, 0) scale(1.2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+}
+
+.markdown h1,
+.markdown h2,
+.navbar__title {
+  font-family: var(--onx-display);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.markdown h1 {
+  font-size: 2.1rem;
+  margin-bottom: 1.4rem;
+}
+
+.markdown h2 {
+  font-size: 1.25rem;
+  color: var(--onx-muted);
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--onx-hairline);
+  margin-top: 3rem;
+}
+
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  font-family: var(--onx-body);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.markdown h3 {
+  font-size: 1.15rem;
+  margin-top: 2.4rem;
+}
+
+.navbar {
+  position: relative;
+  border-bottom: 1px solid var(--onx-hairline);
+}
+
+/*
+ * backdrop-filter on .navbar itself would create a containing block for its
+ * fixed-position descendants (the mobile .navbar-sidebar drawer), clipping
+ * it to the navbar's own height instead of the viewport. Applying the blur
+ * via a pseudo-element keeps .navbar filter-free.
+ */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.navbar__logo {
+  height: 28px;
+}
+
+.navbar__link {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+  letter-spacing: 0.4px;
+}
+
+.navbar__link--active {
+  color: var(--onx-blue);
+}
+
+.navbar__link svg[class*='iconExternalLink'],
+.footer__link-item svg[class*='iconExternalLink'] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+
+.onx-link-icon::before {
+  content: '';
+  display: inline-block;
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: 0.5em;
+  vertical-align: -0.18em;
+}
+
+.onx-link-icon--github::before {
+  background-color: currentColor;
+  -webkit-mask: var(--onx-icon-github) center / contain no-repeat;
+  mask: var(--onx-icon-github) center / contain no-repeat;
+}
+
+.onx-link-icon--onx::before {
+  background: url('../../static/img/favicon.png') center / contain no-repeat;
+  border-radius: 4px;
+}
+
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--onx-hairline) !important;
+}
+
+.menu {
+  padding: 1rem 0.75rem !important;
+}
+
+.menu__link {
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  transition:
+    background 0.18s var(--onx-ease),
+    color 0.18s var(--onx-ease);
+}
+
+.menu__link--active {
+  font-weight: 600;
+}
+
+.menu__list-item-collapsible:hover {
+  background: var(--ifm-menu-color-background-hover);
+}
+
+.theme-doc-sidebar-item-category > .menu__list-item-collapsible > .menu__link {
+  font-family: var(--onx-display);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--onx-white);
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  border: 1px solid var(--onx-hairline);
+  border-radius: var(--onx-radius);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  font-size: 0.86rem;
+}
+
+.theme-doc-markdown table thead {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.theme-doc-markdown table thead tr {
+  border-bottom: 1px solid var(--onx-hairline);
+}
+
+.theme-doc-markdown table th {
+  font-family: var(--onx-display);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  font-size: 0.72rem;
+  color: var(--onx-muted);
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.theme-doc-markdown table th,
+.theme-doc-markdown table td {
+  border: 0;
+  border-bottom: 1px solid var(--onx-hairline);
+  vertical-align: top;
+}
+
+.theme-doc-markdown table tr:last-child td {
+  border-bottom: 0;
+}
+
+.theme-doc-markdown > div:has(> table) {
+  overflow-x: auto;
+}
+
+code {
+  border: 1px solid rgba(var(--onx-blue-rgb), 0.18);
+  border-radius: 6px;
+}
+
+.theme-code-block {
+  border: 1px solid var(--onx-hairline);
+  border-radius: var(--onx-radius) !important;
+  box-shadow: none !important;
+}
+
+a code {
+  color: var(--onx-blue);
+}
+
+.alert {
+  border: 1px solid var(--onx-hairline-strong);
+  border-radius: var(--onx-radius);
+  box-shadow: none;
+}
+
+.pagination-nav__link {
+  border: 1px solid var(--onx-hairline);
+  border-radius: var(--onx-radius);
+  background: var(--onx-card);
+  transition:
+    border-color 0.25s var(--onx-ease),
+    transform 0.25s var(--onx-ease);
+}
+
+.pagination-nav__link:hover {
+  border-color: rgba(var(--onx-blue-rgb), 0.45);
+  transform: translateY(-2px);
+}
+
+.pagination-nav__sublabel {
+  font-family: var(--onx-display);
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.4px;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: rgba(var(--onx-blue-rgb), 0.1);
+  color: var(--onx-white);
+}
+
+.table-of-contents {
+  font-size: 0.8rem;
+}
+
+.table-of-contents__link--active {
+  color: var(--onx-blue);
+  font-weight: 600;
+}
+
+.footer {
+  background: transparent;
+  border-top: 1px solid var(--onx-hairline);
+  padding: 40px 0;
+  --ifm-footer-link-color: var(--onx-white);
+  --ifm-footer-link-hover-color: var(--onx-blue);
+}
+
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 32px;
+}
+
+.footer__links {
+  order: 2;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 32px;
+}
+
+.footer__item {
+  padding: 0;
+}
+
+.footer__link-separator {
+  display: none;
+}
+
+.footer__link-item,
+.footer__copyright {
+  font-family: var(--onx-display);
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.footer__link-item {
+  transition: color 0.2s var(--onx-ease);
+}
+
+.footer__bottom {
+  order: 1;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__links {
+    order: 1;
+  }
+
+  .footer__bottom {
+    order: 2;
+  }
+}
+
+.navbar__search-input {
+  width: 17rem;
+  max-width: calc(100vw - 2rem);
+  border: 1px solid var(--onx-hairline);
+  border-radius: 999px;
+  transition:
+    width 0.25s var(--onx-ease),
+    border-color 0.25s var(--onx-ease),
+    background 0.25s var(--onx-ease);
+}
+
+.navbar__search-input:focus {
+  width: 24rem;
+  border-color: rgba(var(--onx-blue-rgb), 0.45);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+@media (max-width: 1200px) {
+  .navbar__search-input {
+    width: 12rem;
+  }
+
+  .navbar__search-input:focus {
+    width: 16rem;
+  }
+}
+
+mark {
+  background: rgba(var(--onx-blue-rgb), 0.22);
+  color: var(--onx-white);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--onx-blue);
+  outline-offset: 3px;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--onx-blue);
+  background-clip: padding-box;
+}
+
+@supports (-moz-appearance: none) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+  }
+}
